@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF22FF851D00E74D00044E73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF22FF841D00E74D00044E73 /* main.m */; };
+		BF22FF881D00E74D00044E73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF22FF871D00E74D00044E73 /* AppDelegate.m */; };
+		BF22FF8B1D00E74D00044E73 /* TourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF22FF8A1D00E74D00044E73 /* TourViewController.m */; };
+		BF22FF8E1D00E74D00044E73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF22FF8C1D00E74D00044E73 /* Main.storyboard */; };
+		BF22FF901D00E74D00044E73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF22FF8F1D00E74D00044E73 /* Assets.xcassets */; };
+		BF22FF931D00E74D00044E73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF22FF911D00E74D00044E73 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF22FF801D00E74D00044E73 /* iOS VR Tour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS VR Tour.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF22FF841D00E74D00044E73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF22FF861D00E74D00044E73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF22FF871D00E74D00044E73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF22FF891D00E74D00044E73 /* TourViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TourViewController.h; sourceTree = "<group>"; };
+		BF22FF8A1D00E74D00044E73 /* TourViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TourViewController.m; sourceTree = "<group>"; };
+		BF22FF8D1D00E74D00044E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF22FF8F1D00E74D00044E73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF22FF921D00E74D00044E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF22FF941D00E74D00044E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF22FF7D1D00E74D00044E73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF22FF771D00E74D00044E73 = {
+			isa = PBXGroup;
+			children = (
+				BF22FF821D00E74D00044E73 /* iOS VR Tour */,
+				BF22FF811D00E74D00044E73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF22FF811D00E74D00044E73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF22FF801D00E74D00044E73 /* iOS VR Tour.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF22FF821D00E74D00044E73 /* iOS VR Tour */ = {
+			isa = PBXGroup;
+			children = (
+				BF22FF861D00E74D00044E73 /* AppDelegate.h */,
+				BF22FF871D00E74D00044E73 /* AppDelegate.m */,
+				BF22FF891D00E74D00044E73 /* TourViewController.h */,
+				BF22FF8A1D00E74D00044E73 /* TourViewController.m */,
+				BF22FF8C1D00E74D00044E73 /* Main.storyboard */,
+				BF22FF8F1D00E74D00044E73 /* Assets.xcassets */,
+				BF22FF911D00E74D00044E73 /* LaunchScreen.storyboard */,
+				BF22FF941D00E74D00044E73 /* Info.plist */,
+				BF22FF831D00E74D00044E73 /* Supporting Files */,
+			);
+			path = "iOS VR Tour";
+			sourceTree = "<group>";
+		};
+		BF22FF831D00E74D00044E73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF22FF841D00E74D00044E73 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF22FF7F1D00E74D00044E73 /* iOS VR Tour */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF22FF971D00E74D00044E73 /* Build configuration list for PBXNativeTarget "iOS VR Tour" */;
+			buildPhases = (
+				BF22FF7C1D00E74D00044E73 /* Sources */,
+				BF22FF7D1D00E74D00044E73 /* Frameworks */,
+				BF22FF7E1D00E74D00044E73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS VR Tour";
+			productName = "iOS VR Tour";
+			productReference = BF22FF801D00E74D00044E73 /* iOS VR Tour.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF22FF781D00E74D00044E73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Belmont Technology Pty Ltd";
+				TargetAttributes = {
+					BF22FF7F1D00E74D00044E73 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = BF22FF7B1D00E74D00044E73 /* Build configuration list for PBXProject "iOS VR Tour" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF22FF771D00E74D00044E73;
+			productRefGroup = BF22FF811D00E74D00044E73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF22FF7F1D00E74D00044E73 /* iOS VR Tour */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF22FF7E1D00E74D00044E73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF22FF931D00E74D00044E73 /* LaunchScreen.storyboard in Resources */,
+				BF22FF901D00E74D00044E73 /* Assets.xcassets in Resources */,
+				BF22FF8E1D00E74D00044E73 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF22FF7C1D00E74D00044E73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF22FF8B1D00E74D00044E73 /* TourViewController.m in Sources */,
+				BF22FF881D00E74D00044E73 /* AppDelegate.m in Sources */,
+				BF22FF851D00E74D00044E73 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF22FF8C1D00E74D00044E73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF22FF8D1D00E74D00044E73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF22FF911D00E74D00044E73 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF22FF921D00E74D00044E73 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF22FF951D00E74D00044E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BF22FF961D00E74D00044E73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF22FF981D00E74D00044E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "iOS VR Tour/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.belmonttechnology.iOS-VR-Tour";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF22FF991D00E74D00044E73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "iOS VR Tour/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.belmonttechnology.iOS-VR-Tour";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF22FF7B1D00E74D00044E73 /* Build configuration list for PBXProject "iOS VR Tour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF22FF951D00E74D00044E73 /* Debug */,
+				BF22FF961D00E74D00044E73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF22FF971D00E74D00044E73 /* Build configuration list for PBXNativeTarget "iOS VR Tour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF22FF981D00E74D00044E73 /* Debug */,
+				BF22FF991D00E74D00044E73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF22FF781D00E74D00044E73 /* Project object */;
+}
