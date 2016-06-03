@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37D9AD5F67F37A0BEF982404 /* libPods-iOS VR Tour.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2705B45F62D903FD3472E6BD /* libPods-iOS VR Tour.a */; };
 		BF22FF851D00E74D00044E73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF22FF841D00E74D00044E73 /* main.m */; };
 		BF22FF881D00E74D00044E73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF22FF871D00E74D00044E73 /* AppDelegate.m */; };
 		BF22FF8B1D00E74D00044E73 /* TourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF22FF8A1D00E74D00044E73 /* TourViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2705B45F62D903FD3472E6BD /* libPods-iOS VR Tour.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS VR Tour.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CE69EDD87896074803472E6 /* Pods-iOS VR Tour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS VR Tour.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS VR Tour/Pods-iOS VR Tour.release.xcconfig"; sourceTree = "<group>"; };
 		BF22FF801D00E74D00044E73 /* iOS VR Tour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS VR Tour.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF22FF841D00E74D00044E73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF22FF861D00E74D00044E73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		BF22FF8F1D00E74D00044E73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF22FF921D00E74D00044E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF22FF941D00E74D00044E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9E3A15D0AB00638DD137EF6 /* Pods-iOS VR Tour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS VR Tour.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS VR Tour/Pods-iOS VR Tour.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37D9AD5F67F37A0BEF982404 /* libPods-iOS VR Tour.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C5C18C1FA7298F1B7E2D943 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2705B45F62D903FD3472E6BD /* libPods-iOS VR Tour.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3E70F073CAF609D8ABDF0DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9E3A15D0AB00638DD137EF6 /* Pods-iOS VR Tour.debug.xcconfig */,
+				6CE69EDD87896074803472E6 /* Pods-iOS VR Tour.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BF22FF771D00E74D00044E73 = {
 			isa = PBXGroup;
 			children = (
 				BF22FF821D00E74D00044E73 /* iOS VR Tour */,
 				BF22FF811D00E74D00044E73 /* Products */,
+				B3E70F073CAF609D8ABDF0DA /* Pods */,
+				6C5C18C1FA7298F1B7E2D943 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF22FF971D00E74D00044E73 /* Build configuration list for PBXNativeTarget "iOS VR Tour" */;
 			buildPhases = (
+				84F662C4A4D20E8214619082 /* 📦 Check Pods Manifest.lock */,
 				BF22FF7C1D00E74D00044E73 /* Sources */,
 				BF22FF7D1D00E74D00044E73 /* Frameworks */,
 				BF22FF7E1D00E74D00044E73 /* Resources */,
+				8CF4FCD3B713378F51A895EF /* 📦 Embed Pods Frameworks */,
+				B907656946675FF379D4AC70 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84F662C4A4D20E8214619082 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8CF4FCD3B713378F51A895EF /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS VR Tour/Pods-iOS VR Tour-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B907656946675FF379D4AC70 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS VR Tour/Pods-iOS VR Tour-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF22FF7C1D00E74D00044E73 /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		BF22FF981D00E74D00044E73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9E3A15D0AB00638DD137EF6 /* Pods-iOS VR Tour.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS VR Tour/Info.plist";
@@ -272,6 +348,7 @@
 		};
 		BF22FF991D00E74D00044E73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CE69EDD87896074803472E6 /* Pods-iOS VR Tour.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS VR Tour/Info.plist";
@@ -300,6 +377,7 @@
 				BF22FF991D00E74D00044E73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
