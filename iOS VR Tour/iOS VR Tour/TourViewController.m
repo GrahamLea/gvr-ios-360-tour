@@ -68,6 +68,12 @@
     }];
 }
 
+-(void)widgetView:(GVRWidgetView *)widgetView didChangeDisplayMode:(GVRWidgetDisplayMode)displayMode {
+    BOOL showEmbeddedControls = displayMode == kGVRWidgetDisplayModeEmbedded;
+    self.backButton.hidden = !showEmbeddedControls;
+    self.loadingLabel.hidden = !showEmbeddedControls;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -12,6 +12,9 @@
 
 @interface TourViewController : UIViewController <MediaControlDelegate>
 
+@property (weak, nonatomic) IBOutlet UILabel *loadingLabel;
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+
 @property (weak, nonatomic) IBOutlet UIView *parentView;
 @property (weak, nonatomic) IBOutlet GVRPanoramaView *panoramaView;
 - (IBAction)back:(id)sender;
