@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GVRPanoramaView.h"
+#import "MediaControl.h"
 
-@interface TourViewController : UIViewController
+@interface TourViewController : UIViewController <MediaControlDelegate>
 
+@property (weak, nonatomic) IBOutlet UIView *parentView;
+@property (weak, nonatomic) IBOutlet GVRPanoramaView *panoramaView;
 - (IBAction)back:(id)sender;
-
 
 @end
 

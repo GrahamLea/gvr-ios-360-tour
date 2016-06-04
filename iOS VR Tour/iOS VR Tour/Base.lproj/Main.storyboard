@@ -50,14 +50,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rSx-bi-hEs">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rSx-bi-hEs" userLabel="Parent View">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aj4-SN-YvE">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aj4-SN-YvE" userLabel="Panorama View" customClass="GVRPanoramaView">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Jp-7P-Jcp">
+                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Jp-7P-Jcp" userLabel="Back Button">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Mj4-rp-lcW"/>
@@ -74,6 +74,10 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="1Jp-7P-Jcp" firstAttribute="top" secondItem="rSx-bi-hEs" secondAttribute="top" id="5V0-qh-5uv"/>
+                                    <constraint firstItem="Aj4-SN-YvE" firstAttribute="centerX" secondItem="rSx-bi-hEs" secondAttribute="centerX" id="EKd-oe-wsW"/>
+                                    <constraint firstItem="Aj4-SN-YvE" firstAttribute="centerY" secondItem="rSx-bi-hEs" secondAttribute="centerY" id="Fen-7G-JnH"/>
+                                    <constraint firstItem="Aj4-SN-YvE" firstAttribute="width" secondItem="rSx-bi-hEs" secondAttribute="width" id="G31-FA-X4W"/>
+                                    <constraint firstItem="Aj4-SN-YvE" firstAttribute="height" secondItem="rSx-bi-hEs" secondAttribute="height" id="cYB-W8-WXI"/>
                                     <constraint firstItem="1Jp-7P-Jcp" firstAttribute="leading" secondItem="rSx-bi-hEs" secondAttribute="leading" id="uCl-sj-H47"/>
                                 </constraints>
                             </view>
@@ -87,6 +91,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6HJ-TH-mvx"/>
+                    <connections>
+                        <outlet property="panoramaView" destination="Aj4-SN-YvE" id="fcy-c3-raI"/>
+                        <outlet property="parentView" destination="rSx-bi-hEs" id="yVY-uG-LY8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBw-Wc-tAq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

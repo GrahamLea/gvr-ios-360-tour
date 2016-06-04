@@ -14,6 +14,8 @@
 		BF22FF8E1D00E74D00044E73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF22FF8C1D00E74D00044E73 /* Main.storyboard */; };
 		BF22FF901D00E74D00044E73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF22FF8F1D00E74D00044E73 /* Assets.xcassets */; };
 		BF22FF931D00E74D00044E73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF22FF911D00E74D00044E73 /* LaunchScreen.storyboard */; };
+		BF22FF9B1D01A4E200044E73 /* media in Resources */ = {isa = PBXBuildFile; fileRef = BF22FF9A1D01A4E200044E73 /* media */; };
+		BF22FF9E1D02627900044E73 /* MediaControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BF22FF9D1D02627900044E73 /* MediaControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		BF22FF8F1D00E74D00044E73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF22FF921D00E74D00044E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF22FF941D00E74D00044E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF22FF9A1D01A4E200044E73 /* media */ = {isa = PBXFileReference; lastKnownFileType = folder; path = media; sourceTree = "<group>"; };
+		BF22FF9C1D02627900044E73 /* MediaControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaControl.h; sourceTree = "<group>"; };
+		BF22FF9D1D02627900044E73 /* MediaControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaControl.m; sourceTree = "<group>"; };
 		D9E3A15D0AB00638DD137EF6 /* Pods-iOS VR Tour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS VR Tour.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS VR Tour/Pods-iOS VR Tour.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,14 +87,17 @@
 		BF22FF821D00E74D00044E73 /* iOS VR Tour */ = {
 			isa = PBXGroup;
 			children = (
+				BF22FF911D00E74D00044E73 /* LaunchScreen.storyboard */,
+				BF22FF8C1D00E74D00044E73 /* Main.storyboard */,
 				BF22FF861D00E74D00044E73 /* AppDelegate.h */,
 				BF22FF871D00E74D00044E73 /* AppDelegate.m */,
 				BF22FF891D00E74D00044E73 /* TourViewController.h */,
 				BF22FF8A1D00E74D00044E73 /* TourViewController.m */,
-				BF22FF8C1D00E74D00044E73 /* Main.storyboard */,
+				BF22FF9C1D02627900044E73 /* MediaControl.h */,
+				BF22FF9D1D02627900044E73 /* MediaControl.m */,
 				BF22FF8F1D00E74D00044E73 /* Assets.xcassets */,
-				BF22FF911D00E74D00044E73 /* LaunchScreen.storyboard */,
 				BF22FF941D00E74D00044E73 /* Info.plist */,
+				BF22FF9A1D01A4E200044E73 /* media */,
 				BF22FF831D00E74D00044E73 /* Supporting Files */,
 			);
 			path = "iOS VR Tour";
@@ -164,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF22FF931D00E74D00044E73 /* LaunchScreen.storyboard in Resources */,
+				BF22FF9B1D01A4E200044E73 /* media in Resources */,
 				BF22FF901D00E74D00044E73 /* Assets.xcassets in Resources */,
 				BF22FF8E1D00E74D00044E73 /* Main.storyboard in Resources */,
 			);
@@ -226,6 +235,7 @@
 			files = (
 				BF22FF8B1D00E74D00044E73 /* TourViewController.m in Sources */,
 				BF22FF881D00E74D00044E73 /* AppDelegate.m in Sources */,
+				BF22FF9E1D02627900044E73 /* MediaControl.m in Sources */,
 				BF22FF851D00E74D00044E73 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +349,7 @@
 			baseConfigurationReference = D9E3A15D0AB00638DD137EF6 /* Pods-iOS VR Tour.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "iOS VR Tour/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "au.com.belmonttechnology.iOS-VR-Tour";
@@ -351,6 +362,7 @@
 			baseConfigurationReference = 6CE69EDD87896074803472E6 /* Pods-iOS VR Tour.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "iOS VR Tour/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "au.com.belmonttechnology.iOS-VR-Tour";
