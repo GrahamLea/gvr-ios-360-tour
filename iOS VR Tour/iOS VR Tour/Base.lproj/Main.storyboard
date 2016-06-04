@@ -4,12 +4,13 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home Page View Controller-->
         <scene sceneID="3NQ-D5-Wyv">
             <objects>
-                <viewController id="b1F-oZ-OdD" sceneMemberID="viewController">
+                <viewController id="b1F-oZ-OdD" customClass="HomePageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9jh-7x-Eif"/>
                         <viewControllerLayoutGuide type="bottom" id="vST-Sg-IlI"/>
@@ -19,18 +20,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWH-ma-7KI">
-                                <rect key="frame" x="126" y="269" width="69" height="30"/>
-                                <state key="normal" title="Start Tour"/>
+                                <rect key="frame" x="48" y="408" width="224" height="40"/>
+                                <color key="backgroundColor" red="0.051783511509999998" green="0.54556435029999995" blue="0.90828022200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start Tour in VR">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="oFx-RA-QmG" kind="show" id="7Ud-SP-qJg"/>
+                                    <segue destination="oFx-RA-QmG" kind="showDetail" identifier="startTourVR" action="showViewController:sender:" id="7Ud-SP-qJg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgg-5t-fP0">
+                                <rect key="frame" x="48" y="488" width="224" height="40"/>
+                                <color key="backgroundColor" red="0.051783511509999998" green="0.54556435029999995" blue="0.90828022200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eIg-nF-IEg"/>
+                                </constraints>
+                                <state key="normal" title="Start Tour in Fullscreen">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oFx-RA-QmG" kind="showDetail" identifier="startTourFullscreen" id="kNl-Qh-MgR"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vST-Sg-IlI" firstAttribute="top" secondItem="Dgg-5t-fP0" secondAttribute="bottom" constant="40" id="6bB-4a-g2Z"/>
+                            <constraint firstItem="TWH-ma-7KI" firstAttribute="height" secondItem="Dgg-5t-fP0" secondAttribute="height" id="A7g-e3-aQN"/>
+                            <constraint firstItem="TWH-ma-7KI" firstAttribute="centerX" secondItem="Dgg-5t-fP0" secondAttribute="centerX" id="Tco-wc-ZVR"/>
+                            <constraint firstItem="Dgg-5t-fP0" firstAttribute="top" secondItem="TWH-ma-7KI" secondAttribute="bottom" constant="40" id="ZbK-TT-Dzd"/>
                             <constraint firstItem="TWH-ma-7KI" firstAttribute="centerX" secondItem="9es-YI-ICL" secondAttribute="centerX" id="cqh-qd-Ndy"/>
+                            <constraint firstItem="TWH-ma-7KI" firstAttribute="width" secondItem="Dgg-5t-fP0" secondAttribute="width" id="iTc-p9-ZfL"/>
                             <constraint firstItem="TWH-ma-7KI" firstAttribute="centerY" secondItem="9es-YI-ICL" secondAttribute="centerY" id="mOb-Hh-48b"/>
+                            <constraint firstItem="Dgg-5t-fP0" firstAttribute="centerX" secondItem="9es-YI-ICL" secondAttribute="centerX" id="mPW-zY-DUo"/>
+                            <constraint firstItem="Dgg-5t-fP0" firstAttribute="width" secondItem="9es-YI-ICL" secondAttribute="width" multiplier="0.7" id="xfG-FU-4g6"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Tco-wc-ZVR"/>
+                                <exclude reference="mOb-Hh-48b"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="15b-N0-Q32"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -121,4 +151,7 @@
             <point key="canvasLocation" x="485" y="341"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="7Ud-SP-qJg"/>
+    </inferredMetricsTieBreakers>
 </document>

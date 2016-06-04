@@ -20,13 +20,10 @@
     [super viewDidLoad];
 
     self.panoramaView.delegate = self;
-    self.panoramaView.enableFullscreenButton = YES;
-    self.panoramaView.enableCardboardButton = YES;
+    self.panoramaView.enableFullscreenButton = NO;
     
     mediaControl = [[MediaControl alloc] init];
     mediaControl.delegate = self;
-    
-    [mediaControl nextScene];
 }
 
 -(void)loadImage:(NSString *)imagePath {
@@ -35,8 +32,24 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
+    NSLog(@"TourViewController viewWillAppear: self.showVrMode = %i", self.showVrMode);
+    self.panoramaView.enableCardboardButton = self.showVrMode;
+
     self.parentView.alpha = 0;
     self.panoramaView.alpha = 0;
+
+    [mediaControl nextScene];
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    if (self.showVrMode) {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:@"Tap on the VR viewer icon to enter VR mode" preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* alertAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {}];
+        
+        [alertController addAction:alertAction];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
 }
 
 - (void)widgetView:(GVRWidgetView *)widgetView didLoadContent:(id)content {

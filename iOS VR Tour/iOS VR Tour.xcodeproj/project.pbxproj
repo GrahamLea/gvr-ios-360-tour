@@ -16,6 +16,7 @@
 		BF22FF931D00E74D00044E73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF22FF911D00E74D00044E73 /* LaunchScreen.storyboard */; };
 		BF22FF9B1D01A4E200044E73 /* media in Resources */ = {isa = PBXBuildFile; fileRef = BF22FF9A1D01A4E200044E73 /* media */; };
 		BF22FF9E1D02627900044E73 /* MediaControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BF22FF9D1D02627900044E73 /* MediaControl.m */; };
+		BF22FFA11D0277F000044E73 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF22FFA01D0277EF00044E73 /* HomePageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		BF22FF9A1D01A4E200044E73 /* media */ = {isa = PBXFileReference; lastKnownFileType = folder; path = media; sourceTree = "<group>"; };
 		BF22FF9C1D02627900044E73 /* MediaControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaControl.h; sourceTree = "<group>"; };
 		BF22FF9D1D02627900044E73 /* MediaControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaControl.m; sourceTree = "<group>"; };
+		BF22FF9F1D0277EF00044E73 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		BF22FFA01D0277EF00044E73 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
 		D9E3A15D0AB00638DD137EF6 /* Pods-iOS VR Tour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS VR Tour.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS VR Tour/Pods-iOS VR Tour.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +94,8 @@
 				BF22FF8C1D00E74D00044E73 /* Main.storyboard */,
 				BF22FF861D00E74D00044E73 /* AppDelegate.h */,
 				BF22FF871D00E74D00044E73 /* AppDelegate.m */,
+				BF22FF9F1D0277EF00044E73 /* HomePageViewController.h */,
+				BF22FFA01D0277EF00044E73 /* HomePageViewController.m */,
 				BF22FF891D00E74D00044E73 /* TourViewController.h */,
 				BF22FF8A1D00E74D00044E73 /* TourViewController.m */,
 				BF22FF9C1D02627900044E73 /* MediaControl.h */,
@@ -235,6 +240,7 @@
 			files = (
 				BF22FF8B1D00E74D00044E73 /* TourViewController.m in Sources */,
 				BF22FF881D00E74D00044E73 /* AppDelegate.m in Sources */,
+				BF22FFA11D0277F000044E73 /* HomePageViewController.m in Sources */,
 				BF22FF9E1D02627900044E73 /* MediaControl.m in Sources */,
 				BF22FF851D00E74D00044E73 /* main.m in Sources */,
 			);
